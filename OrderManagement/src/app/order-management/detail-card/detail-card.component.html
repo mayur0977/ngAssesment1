@@ -1,0 +1,12 @@
+<div class="card" style="width: 43rem;">
+  <div class="card-body">
+    <h5 class="card-title text-success"><span style="color:crimson">{{listOrderData.id}} :</span>
+      <span style="color:green">{{listOrderData.productName}}</span>
+    </h5>
+    <h6 class="card-subtitle mb-3 text-muted">ORDER DATE : {{listOrderData.orderDate | date:'dd-MM-yyyy'}}</h6>
+    <h6 class="card-subtitle mb-3">QUANTITY : {{listOrderData.qty}}</h6>
+    <h6 class="card-subtitle mb-3">STATUS : {{listOrderData.status}}</h6>
+    <button class="btn btn btn-outline-danger" (click)="sendDeleteData(listOrderData.id)">Delete</button>
+    <button class="btn btn btn-outline-warning" (click)="sendDataForUpdate(listOrderData)">Update</button>
+  </div>
+</div>
